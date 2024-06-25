@@ -21,8 +21,15 @@ piacerebbe poterlo affrontare senza paura. Magari fosse in cucina!";
 
 $length = strlen($paragraph);
 
+$censoredWord = $_GET["censoredWord"];
+
 echo $length;
 
+str_replace(
+    $censoredWord,
+    "***",
+    $paragraph,
+);
 
 ?>
 
@@ -44,6 +51,16 @@ echo $length;
         <p class="paragrafo">
             Il paragrafo è lungo <?php echo $length; ?> caratteri
         </p>
+
+        <form action="./index.php" method="GET">
+            <label for="censoredWord">
+                Quale parola vuoi censurare?
+            </label>
+            <input type="text" name="censoredWord" id="censoredWord">
+            <button type="submit">
+                Invia Censura
+            </button>
+        </form>
     </main>
 </body>
 </html>
