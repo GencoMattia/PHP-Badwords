@@ -19,13 +19,13 @@ Penso che quando verrà il momento di morire, vorrei che fosse in cucina.
 Che io mi trovi da sola in un posto freddo, o al caldo insieme a qualcuno, mi
 piacerebbe poterlo affrontare senza paura. Magari fosse in cucina!";
 
-$length = strlen($paragraph);
+$length = strlen($censoredParagraph);
 
 $censoredWord = $_GET["censoredWord"];
 
 echo $length;
 
-str_replace(
+$censoredParagraph = str_replace(
     $censoredWord,
     "***",
     $paragraph,
@@ -46,7 +46,7 @@ str_replace(
             Paragrafo tratto da Kitchen di Banana Yoshimoto
         </h1>
         <p>
-            <?php echo $paragraph; ?>
+            <?php echo $censoredParagraph; ?>
         </p>
         <p class="paragrafo">
             Il paragrafo è lungo <?php echo $length; ?> caratteri
