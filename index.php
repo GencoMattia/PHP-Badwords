@@ -35,8 +35,14 @@ echo $length;
 </head>
 <body>
     <main>
+        <h1>
+            Paragrafo tratto da Kitchen di Banana Yoshimoto
+        </h1>
+        <p>
+            <?php echo $paragraph; ?>
+        </p>
         <p class="paragrafo">
-        <?php echo $paragraph; ?>
+            Il paragrafo è lungo <?php echo $length; ?> caratteri
         </p>
     </main>
 </body>
