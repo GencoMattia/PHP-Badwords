@@ -19,17 +19,15 @@ Penso che quando verrà il momento di morire, vorrei che fosse in cucina.
 Che io mi trovi da sola in un posto freddo, o al caldo insieme a qualcuno, mi
 piacerebbe poterlo affrontare senza paura. Magari fosse in cucina!";
 
-$length = strlen($censoredParagraph);
-
 $censoredWord = $_GET["censoredWord"];
-
-echo $length;
 
 $censoredParagraph = str_replace(
     $censoredWord,
     "***",
     $paragraph,
 );
+
+$length = strlen($censoredParagraph);
 
 ?>
 
