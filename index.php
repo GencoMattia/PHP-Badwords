@@ -1,5 +1,5 @@
 <?php
-    $paragraph = "Non c'è posto al mondo che io ami più della cucina.
+$paragraph = "Non c'è posto al mondo che io ami più della cucina.
 Non importa dove si trova, com'è fatta: purché sia una cucina, un posto
 dove si fa da mangiare, io sto bene. Se possibile le preferisco funzionali e
 vissute. Magari con tantissimi strofinacci asciutti e puliti e le piastrelle
@@ -19,5 +19,25 @@ Penso che quando verrà il momento di morire, vorrei che fosse in cucina.
 Che io mi trovi da sola in un posto freddo, o al caldo insieme a qualcuno, mi
 piacerebbe poterlo affrontare senza paura. Magari fosse in cucina!";
 
-echo $paragraph;
+$length = strlen($paragraph);
+
+echo $length;
+
+
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <p class="paragrafo">
+        <?php echo $paragraph; ?>
+        </p>
+    </main>
+</body>
+</html>
